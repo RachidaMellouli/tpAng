@@ -1,3 +1,8 @@
 <app-navbar></app-navbar>
+<span>{{ title }} app is running!</span>
+<button (click)="onClick($event)">ok</button>
+<input type="text" [(ngModel)]="name"/>
+<p>{{ name }}</p>
+<app-card></app-card>
 <app-footer></app-footer>
 <router-outlet></router-outlet>

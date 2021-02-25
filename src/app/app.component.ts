@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tpAng';
+  title = 'Rachida';
+
+   name: string = "";
+   onClick($event:any) {
+        console.log("ok is clicked", $event)
+      }
+   
+ 
+
 }

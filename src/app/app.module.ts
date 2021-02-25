@@ -7,6 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { FormsModule } from '@angular/forms';
+import { PereComponent } from './pere/pere.component';
+import { FilsComponent } from './pere/fils/fils.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     CardComponent,
+    PereComponent,
+    FilsComponent,
 
   ],
   imports: [

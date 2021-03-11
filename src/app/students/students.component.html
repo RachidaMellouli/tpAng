@@ -1,0 +1,25 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Country</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students; index as i">
+        <th scope="row">{{ i+1 }}</th>
+        <td>{{student.name}}</td>
+        <td>{{student.email}}</td>
+        <!--<td *ngIf="student.country == 'USA'" style="color: red;">{{student.country}}</td>
+        <td *ngIf="student.country != 'USA'" style="color: rgb(0, 255, 34);">{{student.country}}</td>-->
+        <td [ngStyle]="{'background-color':student.country === 'USA' ? 'blue' : 'red' }">{{student.country}}</td>
+        <td>
+            <button type="button" class="btn btn-outline-success">Edit</button>
+            <button type="button" class="btn btn-outline-danger" style="margin: 2%;">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

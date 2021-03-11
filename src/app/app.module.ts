@@ -9,6 +9,8 @@ import { CardComponent } from './card/card.component';
 import { FormsModule } from '@angular/forms';
 import { PereComponent } from './pere/pere.component';
 import { FilsComponent } from './pere/fils/fils.component';
+import { StudentsComponent } from './students/students.component';
+import { AddComponent } from './add/add.component';
 
 
 @NgModule({
@@ -19,6 +21,8 @@ import { FilsComponent } from './pere/fils/fils.component';
     CardComponent,
     PereComponent,
     FilsComponent,
+    StudentsComponent,
+    AddComponent,
 
   ],
   imports: [
